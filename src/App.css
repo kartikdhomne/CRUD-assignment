@@ -1,0 +1,168 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+/* src/App.css */
+.hamburger-menu ul,
+.horizontal-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.hamburger-menu ul li,
+.horizontal-menu ul li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.student-grid table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-grid th,
+.student-grid td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tile-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.student-tile {
+  padding: 16px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(13, 161, 241);
+  border-radius: 12px;
+}
+
+.student-tile > button {
+  margin-bottom: 10px;
+}
+
+.student-detail-page {
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid rgb(13, 161, 241);
+  border-radius: 12px;
+}
+
+/* src/App.css */
+.student-tile {
+  padding: 16px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 8px;
+  transition: background-color 0.3s;
+}
+
+.student-tile.flagged {
+  background-color: #ffefef;
+  border-color: #ff5c5c;
+}
+
+/* -------------------Flag button css----------------------- */
+.details {
+  color: black;
+  border: 1px solid black;
+}
+
+.details:hover {
+  color: #fff;
+  background-color: black;
+}
+
+/* -------------------Flag button css----------------------- */
+.edit {
+  color: green;
+  border: 1px solid green;
+}
+
+.edit:hover {
+  color: #fff;
+  background-color: green;
+}
+
+/* -------------------Flag button css----------------------- */
+.flag {
+  color: rgb(25, 115, 251);
+  border: 1px solid rgb(25, 115, 251);
+}
+.flag:hover {
+  color: #fff;
+  background-color: rgb(25, 115, 251);
+}
+
+/* -------------------Delete button css----------------------- */
+.delete {
+  color: red;
+  border: 1px solid red;
+}
+
+.delete:hover {
+  color: #fff;
+  background-color: red;
+}
+
+.student-email {
+  padding-bottom: 16px;
+}
+
+.back-button {
+  width: 200px;
+  color: #fff;
+  background-color: rgb(25, 115, 251);
+}
+
+.menu-btn {
+  background-color: purple;
+  color: #fff;
+}
+
+.toggle-menu {
+  color: #fff;
+  margin-bottom: 10px;
+  background-color: rgb(25, 115, 251);
+}
