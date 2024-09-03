@@ -1,4 +1,3 @@
-// src/components/StudentTile.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,23 +7,19 @@ const StudentTile = ({ student, updateStudent, deleteStudent }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editData, setEditData] = useState({ name: student.name, email: student.email });
 
-  // Handles viewing student details
   const handleViewDetails = () => {
     navigate(`/student/${student.id}`, { state: { student } });
   };
 
-  // Handles saving the edited student data
   const handleSaveEdit = () => {
     updateStudent({ ...student, ...editData });
     setIsEditing(false);
   };
 
-  // Handles flagging/unflagging the student
   const handleFlag = () => {
     setIsFlagged(!isFlagged);
   };
 
-  // Handles deleting the student
   const handleDelete = () => {
     deleteStudent(student.id);
   };

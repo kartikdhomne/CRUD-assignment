@@ -1,4 +1,3 @@
-// src/components/StudentGrid.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import StudentTile from './StudentTile';
